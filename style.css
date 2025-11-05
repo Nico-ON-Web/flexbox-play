@@ -100,3 +100,7 @@ text-align: center;
 .colone-droite h2 span{
     color: #258594
 }
+
+.encart span{
+    font-weight: bold;
+}
