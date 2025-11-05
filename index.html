@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Comment ça marche : les Flexbox ?</h1>
+    <div class="encart">
+        <span>Regle n°1:</span> Le parent aligne ses enfants
+        <span>Règle n°2:</span> Les enfants ont une largeur
+    </div>
+
+    <div class="flex space-between">
+        <div class="colone-gauche">
+            <h2>Direction</h2>
+            <div>
+               
+                <input type="radio" name="direction" id="row"> <label for="row">Ligne (row)</label>
+            </div>
+            <div>  
+                <input type="radio" name="direction" id="column">
+                <label for="column">Colonne (column)</label>
+              
+            </div>
+
+            <h2>Espacement horizontal (justify-content)</h2>
+            <div>
+                <input type="radio" name="espaceH" id="startH">
+                <label for="startH">flex-start</label>
+                
+            </div>
+           
+                
+            <div>
+                <input type="radio" name="espaceH" id="endH">
+                <label for="endH">Flex-end</label>
+                
+            </div>
+
+            <div> 
+                <input type="radio" name="espaceH" id="spaceBetween">
+                <label for="spaceBetween">Space-between</label>
+               
+            </div>
+
+            <div>
+                <input type="radio" name="espaceH" id="spaceAround">
+                <label for="spaceAround">Space-around</label>
+                
+            </div>
+
+            <div>
+                <input type="radio" name="espaceH" id="centerH">
+                <label for="centerH">Center</label>
+                
+            </div>
+
+            <h2>Alignement vertical (align-items)</h2>
+            <div>
+                <input type="radio" name="espaceV" id="startV">
+                <label for="startV">flex-start</label>
+                
+            </div>
+            <div>
+                <input type="radio" name="espaceV" id="endV">
+                <label for="endV">Flex-end</label>
+                
+            </div>
+            <div>
+                <input type="radio" name="espaceV" id="centerV">
+                <label for="centerV">center</label>
+                
+            </div>
+        </div>
+        <div class="colone-droite">
+            <h2>Liste des classes sur le parent : <span></span></h2>
+            <div id="parent" class="flex">
+                <div class="enfants"></div>
+                <div class="enfants"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js" defer></script>
+</body>
+</html>
